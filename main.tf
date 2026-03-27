@@ -14,7 +14,7 @@ locals {
 }
 
 module "artifact_orders" {
-  source = "./artifact-order"
+  source = "./modules/artifact-order"
 
   for_each = local.artifact_orders
 

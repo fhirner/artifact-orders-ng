@@ -1,0 +1,47 @@
+# module.artifact_orders["alpine"].terraform_data.artifact_order:
+resource "terraform_data" "artifact_order" {
+    id     = "801cdba9-3638-8d3b-86ed-1ec24a06ff4c"
+    input  = {
+        arch   = "linux/amd64"
+        charts = []
+        images = [
+            "alpine",
+        ]
+        name   = "alpine"
+    }
+    output = {
+        arch   = "linux/amd64"
+        charts = []
+        images = [
+            "alpine",
+        ]
+        name   = "alpine"
+    }
+}
+
+# module.artifact_orders["gitlab"].terraform_data.artifact_order:
+resource "terraform_data" "artifact_order" {
+    id     = "230f4df1-8dbf-f00c-71b3-c7e95039bf70"
+    input  = {
+        arch   = "linux/amd64"
+        charts = [
+            "gitlab-runner",
+        ]
+        images = [
+            "gitlab-runner:18.8.1",
+            "gitlab-runner",
+        ]
+        name   = "gitlab"
+    }
+    output = {
+        arch   = "linux/amd64"
+        charts = [
+            "gitlab-runner",
+        ]
+        images = [
+            "gitlab-runner:18.8.1",
+            "gitlab-runner",
+        ]
+        name   = "gitlab"
+    }
+}

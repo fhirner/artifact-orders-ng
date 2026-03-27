@@ -1,0 +1,8 @@
+arch: linux/amd64
+
+images:
+  - gitlab-runner:18.8.1
+  - gitlab-runner
+
+charts:
+  - gitlab-runner
